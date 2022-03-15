@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background-image: url(proj1hero.jpg);
+}
+
+html body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html body .wrapper {
+  background-color: #61a4f0;
+  width: 90%;
+  height: 800px;
+  margin-left: 60px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+  border-radius: .6rem;
+}
+
+html body .wrapper .main-wrapper {
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  padding-left: 50px;
+  margin-left: 40px;
+}
+
+html body .wrapper h1 {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+html body .wrapper label {
+  font-size: 20px;
+}
+
+html body .wrapper .input {
+  margin-bottom: 20px;
+}
+
+html body .wrapper .input input[type="text"], html body .wrapper .input textarea {
+  width: 100%;
+  padding: 10px 10px;
+  border: 1px solid #c5b7b7;
+  font-size: 20px;
+  margin-top: 10px;
+  -webkit-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+  border-radius: .6rem;
+}
+
+html body .wrapper textarea {
+  height: 80px;
+}
+
+html body .wrapper .btn input[type="submit"] {
+  border: none;
+  font-size: 30px;
+  color: #6f6f6f;
+  padding: 20px 20px;
+  -webkit-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+  border-radius: .6rem;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=style.css.map */

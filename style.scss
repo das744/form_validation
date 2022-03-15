@@ -1,0 +1,82 @@
+$primary: #ffffff;
+$secondary: rgb(197, 183, 183);
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    // justify-content: space-around; 
+    flex-direction: row;  
+}
+@mixin shadow{
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.3);
+    border-radius: .6rem;
+}
+
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+html{
+  
+    background-image: url(proj1hero.jpg);
+ 
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   
+    .wrapper{
+        background-color: rgb(97, 164, 240);
+        width: 90%;
+        height: 800px;
+        margin-left: 60px;
+        margin-top: 50px;
+        @include flex(); 
+        @include shadow();
+
+       .main-wrapper{
+           width: 70%;
+           height: 80%;
+           margin: auto;
+           padding-left: 50px;
+           margin-left: 40px;
+
+       }
+
+        h1{
+            text-align: center;
+            font-size: 40px;
+            text-transform: uppercase;
+            color: $primary;
+            margin-bottom: 40px;
+        }
+        label{
+            font-size: 20px;
+        }
+        .input{
+            margin-bottom: 20px;
+             input[type="text"],textarea{
+                width: 100%;
+                padding: 10px 10px; 
+                border: 1px solid $secondary;
+                font-size: 20px;
+                margin-top: 10px;
+                @include shadow();
+
+             }
+             
+        }
+        textarea{
+            height: 80px;
+        }
+        .btn input[type="submit"]{
+            border: none;
+            font-size: 30px;
+            color: #6f6f6f;
+            padding: 20px 20px;
+            @include shadow();
+            text-transform: uppercase;
+
+        }
+
+    }
+}
+
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="wrapper">
+      
+            <div class="main-wrapper">
+        <div class="err-sms">
+            <!-- error message -->
+        </div>
+        <form action="/" id="jsform" class="jsform" onsubmit=" validation()">
+            <h1> Form Validation</h1>
+            <!-- for name -->
+        <div class="input">
+            <label for="name">Full Name <i class="fas fa-user"></i></i></label>
+            <input type="text" class="user" id="name" placeholder="Enter your name" autocomplete="off" >
+        </div>
+        <!-- for phone -->
+        <div class="input">
+            <label for="pho" >Phone No <i class="fas fa-phone-alt"></i></label>
+            <input type="text" class="pho" id="pho" placeholder="Enter Your Phone" autocomplete="off" >
+        </div>
+        <!-- for email -->
+        <div class="input">
+            <label for="name">Email Address <i class="fas fa-envelope"></i></label>
+            <input type="text" class="email" id="email" placeholder="Enter your Email" autocomplete="off" >
+        </div>
+        <!-- for message -->
+        <div class="input">
+           
+            <label for="sms">Provide your Message <i class="fas fa-comment-alt"></i></label>
+            <textarea class="message" id="message" placeholder="Enter your message" autocomplete="off" ></textarea>
+        </div>
+        <button class="btn"><input type="submit"></button>
+        
+        </form>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
